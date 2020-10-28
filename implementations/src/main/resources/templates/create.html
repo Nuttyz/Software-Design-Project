@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Create science plan</title>
+    <link rel="stylesheet" href="./stylecreate.css"/>
+</head>
+<body>
+<h1>Create the Science Plan</h1>
+<div id="sciencePlanList"></div>
+
+<form id="form" class="visible">
+
+    <div class="input-creator">
+        <label for="creator">Creator</label>
+        <input name="creator" type="text" id="creator"/>
+    </div>
+    <div class="input-submitter">
+        <label for="submitter">Submitter</label>
+        <input name="submitter" type="text" id="submitter"/>
+    </div>
+    <div class="input-fundinginusd">
+        <label for="fundinginusd">FundingInUSD</label>
+        <input name="fundinginusd" type="float" id="fundinginusd"/>
+    </div>
+    <div class="input-objectives">
+        <label for="objectives">Objectives</label>
+        <input name="objectives" type="text" id="objectives"/>
+    </div>
+    <div class="input-starSystem">
+        <label for="starSystem">StarSystem</label>
+        <div></div>
+        <select id="starSystem" name="starSystem" form="starSystem">
+            <option value="SUN">SUN</option>
+            <option value="MERCURY">MERCURY</option>
+            <option value="VENUS">VENUS</option>
+            <option value="EARTH">EARTH</option>
+            <option value="MARS">MARS</option>
+            <option value="JUPITER">JUPITER</option>
+            <option value="SATURN">SATURN</option>
+            <option value="URANUS">URANUS</option>
+            <option value="NEPTUNE">NEPTUNE</option>
+            <option value="Pluto">Pluto</option>
+            <option value="Moon">Moon</option>
+            <option value="Earth_Moon_Barycenter">Earth_Moon_Barycenter</option>
+            <option value="Comet">Comet</option>
+            <option value="Asteroid">Asteroid</option>
+            <option value="NEO">NEO</option>
+            <option value="Nutation">Nutation</option>
+            <option value="Libration">Libration</option>
+            <option value="Solar_System_Barycenter">Solar_System_Barycenter</option>
+            <option value="Phobos">Phobos</option>
+            <option value="Deimos">Deimos</option>
+            <option value="Io">Io</option>
+            <option value="Europa">Europa</option>
+            <option value="Ganymede">Ganymede</option>
+            <option value="Callisto">Callisto</option>
+            <option value="Mimas">Mimas</option>
+            <option value="Enceladus">Enceladus</option>
+            <option value="Tethys">Tethys</option>
+            <option value="Dione">Dione</option>
+            <option value="Rhea">Rhea</option>
+            <option value="Titan">Titan</option>
+            <option value="Hyperion">Hyperion</option>
+            <option value="Iapetus">Iapetus</option>
+            <option value="Miranda">Miranda</option>
+            <option value="Ariel">Ariel</option>
+            <option value="Umbriel">Umbriel</option>
+            <option value="Titania">Titania</option>
+            <option value="Oberon">Oberon</option>
+            <option value="Triton">Triton</option>
+            <option value="Nereid">Nereid</option>
+            <option value="Charon">Charon</option>
+            <option value="Amalthea">Amalthea</option>
+            <option value="Thebe">Thebe</option>
+            <option value="Adrastea">Adrastea</option>
+            <option value="Metis">Metis</option>
+            <option value="Himalia">Himalia</option>
+            <option value="Elara">Elara</option>
+            <option value="Pasiphae">Pasiphae</option>
+            <option value="Sinope">Sinope</option>
+            <option value="Lysithea">Lysithea</option>
+            <option value="Carme">Carme</option>
+            <option value="Ananke">Ananke</option>
+            <option value="Leda">Leda</option>
+            <option value="Atlas">Atlas</option>
+            <option value="Prometheus">Prometheus</option>
+            <option value="Pandora">Pandora</option>
+            <option value="Pan">Pan</option>
+            <option value="Epimetheus">Epimetheus</option>
+            <option value="Janus">Janus</option>
+            <option value="Telesto">Telesto</option>
+            <option value="Calypso">Calypso</option>
+            <option value="Helene">Helene</option>
+            <option value="Phobe">Phobe</option>
+            <option value="Cordelia">Cordelia</option>
+            <option value="Ophelia">Ophelia</option>
+            <option value="Cressida">Cressida</option>
+            <option value="Bianca">Bianca</option>
+            <option value="Desdemona">Desdemona</option>
+            <option value="Juliet">Juliet</option>
+            <option value="Portia">Portia</option>
+            <option value="Rosalind">Rosalind</option>
+            <option value="Puck">Puck</option>
+            <option value="Belinda">Belinda</option>
+            <option value="Naiad">Naiad</option>
+            <option value="Thalassa">Thalassa</option>
+            <option value="Despina">Despina</option>
+            <option value="Galatea">Galatea</option>
+            <option value="Larissa">Larissa</option>
+            <option value="Proteus">Proteus</option>
+            <option value="Ceres">Ceres</option>
+            <option value="Pallas">Pallas</option>
+            <option value="Vesta">Vesta</option>
+            <option value="Lutetia">Lutetia</option>
+            <option value="Ida">Ida</option>
+            <option value="Eros">Eros</option>
+            <option value="Davida">Davida</option>
+            <option value="Gaspra">Gaspra</option>
+            <option value="Steins">Steins</option>
+            <option value="Itokawa">Itokawa</option>
+            <option value="P9_Temple_1">P9_Temple_1</option>
+            <option value="P19_Borrelly">P19_Borrelly</option>
+            <option value="NOT_A_PLANET">NOT_A_PLANET</option>
+        </select>
+    </div>
+
+    <div class="input-startDate">
+        <label for="startDate">StartDate</label>
+        <input type="date" id="startDate" name="startDate">
+    </div>
+    <div class="input-endDate">
+        <label for="endDate">EndDate</label>
+        <input type="date" id="endDate" name="endDate">
+    </div>
+    <div class="input-telescopeLocation">
+        <label for="telescopeLocation">TelescopeLocation</label>
+        <div></div>
+        <select id="telescopeLocation" name="telescopeLocation" form="telescopeLocation">
+            <option value="HAWAII">HAWAII</option>
+            <option value="CHILE">CHILE</option>
+        </select>
+    </div>
+    <div class="input-durutionOfObservation">
+        <label for="durutionOfObservation">durutionOfObservation</label>
+        <input type="text" id="durutionOfObservation" name="durutionOfObservation">
+    </div>
+    <!-- <div class="input-dataProcRequirement">
+      <label for="DataProcRequirement">hourOfObservation</label>
+      <input type="integer" name="dataProcRequirement" id = "hourOfObservation">
+    </div> -->
+    <!-- <div class="input-dataProcRequirement">
+      <label for="DataProcRequirement">hourOfObservation</label>
+      <input type="integer" name="dataProcRequirement" id = "hourOfObservation">
+    </div> -->
+    <form>
+        <h1>Input info of dataProcRequirements</h1>
+        <div class="input-dataProcRequirement">
+            <label for="filetype">File type</label>
+            <select id="filetype" name="filetype" form="filetype">
+                <option value="RAW">RAW</option>
+                <option value="PNG">PNG</option>
+                <option value="JPEG">JPEG</option>
+                <option value="TIFF">TIFF</option>
+            </select>
+        </div>
+        <div class="input-fileQuality">
+            <label for="fileQuality">FileQuality</label>
+            <input class="input" type="float" placeholder="0-100" name="fileQuality" id = "fileQuality" onchange="checkin()" >
+        </div>
+        <div class="input-bw">
+            <label for="bw">BW</label>
+            <input class="input" type="float" placeholder="0-100" name="bw" id = "bw" onchange="checkin()" >
+        </div>
+        <div class="input-colors">
+            <label for="colors">Colors</label>
+            <input class="input" type="float" placeholder="0-100" name="colors" id = "colors" onchange="checkin()" >
+        </div>
+        <div class="input-contrast">
+            <label for="contrast">Contrast</label>
+            <input class="input" type="float" placeholder="0-100" name="contrast" id = "contrast" onchange="checkin()" >
+        </div>
+        <div class="input-brightness">
+            <label for="brightness">Brightness</label>
+            <input class="input" type="float" placeholder="0-100" name="brightness" id = "brightness" onchange="checkin()" >
+        </div>
+        <div class="input-saturation">
+            <label for="saturation">Saturation</label>
+            <input class="input" type="float" placeholder="0-100" name="saturation" id = "saturation"onchange="checkin()">
+        </div>
+
+
+    </form>
+</form>
+<button id="submitSciencePlan">Submit</button>
+
+<script>
+    function checkdate(){
+        var today = document.getElementById("startDate").value
+        var artoday = today.split("-")
+
+        today = artoday[0]+"-"+artoday[1]+"-"+ (parseInt(artoday[2])+1)
+        console.log(today)
+        document.getElementById("endDate").setAttribute("min",today)
+    }
+    function checkin() {
+        var x1 = document.getElementById("fileQuality").value
+
+        if(x1<0 || x1>100)
+        {
+            alert("Please input correct number")
+        }
+        var x2 = document.getElementById("bw").value
+        console.log(input)
+        if(x2<0 || x2>100)
+        {
+            alert("Please input correct number")
+        }
+        var x3 = document.getElementById("colors").value
+        console.log(input)
+        if(x3<0 || x3>100)
+        {
+            alert("Please input correct number")
+        }
+        var x4 = document.getElementById("contrast").value
+        console.log(input)
+        if(x4<0 || x4>100)
+        {
+            alert("Please input correct number")
+        }
+        var x5 = document.getElementById("brightness").value
+        console.log(input)
+        if(x5<0 || x5>100)
+        {
+            alert("Please input correct number")
+        }
+        var x6 = document.getElementById("saturation").value
+        console.log(input)
+        if(x6<0 || x6>100)
+        {
+            alert("Please input correct number")
+        }
+    }
+
+</script>
+<script src="./apis.js"></script>
+<script src="./create.js"></script>
+</body>
+</html>

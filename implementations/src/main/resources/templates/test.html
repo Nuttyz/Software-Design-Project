@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Test Science Plan</title>
+    <link rel="stylesheet" href="./stylecreate.css"/>
+    <style>
+        .plan-container{
+            align-items: normal!important;
+            float: left;
+            padding: 10px;
+            background: #009688;
+        }
+        .modal-content label {
+            width: 49%;
+            color:black!important;
+        }
+        .preList-sci-plan, .preList-sci-plan th, .preList-sci-plan td {
+            border: 1px solid #009688!important;
+            padding: 0px!important;
+        }
+        body .bg-modal {
+            width: 100%!important;
+            height: 100%!important;
+            background-color: rgba(0, 0, 0, 0.7)!important;
+            position: absolute;
+            top:0;
+            display: none;
+            justify-content: center;
+            align-items: center!important;
+        }
+        .bg-modal .modal-content {
+            width: 500px;
+            height: 600px;
+            background-color: white;
+            padding: 40px 13px 40px 36px!important;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 42px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: black!important;
+        }
+    </style>
+</head>
+<body>
+<h1>Test Science Plan</h1>
+<h1>List of science Plan</h1>
+
+<table class="table table-striped" id="dashTable" border="1">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Creator</th>
+        <th scope="col">Submitter</th>
+        <th scope="col">fundingInUSD</th>
+        <th scope="col">objectives</th>
+        <th scope="col">starSystem</th>
+        <th scope="col">startDate</th>
+        <th scope="col">endDate</th>
+        <th scope="col">telescopeLocation</th>
+        <th scope="col">durutionOfObservation</th>
+        <th scope="col">status</th>
+        <th scope="col">fileType</th>
+        <th scope="col">fileQuality</th>
+        <th scope="col">bw</th>
+        <th scope="col">colors</th>
+        <th scope="col">contrast</th>
+        <th scope="col">brightness</th>
+        <th scope="col">saturation</th>
+    </tr>
+    </thead>
+    <tbody id="task-row">
+    </tbody>
+</table>
+
+<!--<div class="plan-container">-->
+<!--    <table class="preList-sci-plan" id="list-sciPlan">-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Plan No</th>-->
+<!--                <th>Creator</th>-->
+<!--                <th>Status</th>-->
+<!--                <th>     </th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</div>-->
+
+<!-- Pop up section-->
+<!--<div class="bg-modal">-->
+<!--    <div class="modal-content" id="modal-content">-->
+
+<!--    </div>-->
+<!--</div>-->
+<!-- Pop up section-->
+
+<form id="form" class="visible">
+    <div class="input-id">
+        <label for="id">Input ID of sciencePlan</label>
+        <input name="id" type="text" id="id"/>
+    </div>
+    <div class="input-starSystem">
+        <label for="starSystem">Constellation</label>
+        <div></div>
+        <select id="starSystem" name="starSystem" form="starSystem">
+            <option value="SUN">SUN</option>
+            <option value="MERCURY">MERCURY</option>
+            <option value="VENUS">VENUS</option>
+            <option value="EARTH">EARTH</option>
+            <option value="MARS">MARS</option>
+            <option value="JUPITER">JUPITER</option>
+            <option value="SATURN">SATURN</option>
+            <option value="URANUS">URANUS</option>
+            <option value="NEPTUNE">NEPTUNE</option>
+            <option value="Pluto">Pluto</option>
+            <option value="Moon">Moon</option>
+            <option value="Earth_Moon_Barycenter">Earth_Moon_Barycenter</option>
+            <option value="Comet">Comet</option>
+            <option value="Asteroid">Asteroid</option>
+            <option value="NEO">NEO</option>
+            <option value="Nutation">Nutation</option>
+            <option value="Libration">Libration</option>
+            <option value="Solar_System_Barycenter">Solar_System_Barycenter</option>
+            <option value="Phobos">Phobos</option>
+            <option value="Deimos">Deimos</option>
+            <option value="Io">Io</option>
+            <option value="Europa">Europa</option>
+            <option value="Ganymede">Ganymede</option>
+            <option value="Callisto">Callisto</option>
+            <option value="Mimas">Mimas</option>
+            <option value="Enceladus">Enceladus</option>
+            <option value="Tethys">Tethys</option>
+            <option value="Dione">Dione</option>
+            <option value="Rhea">Rhea</option>
+            <option value="Titan">Titan</option>
+            <option value="Hyperion">Hyperion</option>
+            <option value="Iapetus">Iapetus</option>
+            <option value="Miranda">Miranda</option>
+            <option value="Ariel">Ariel</option>
+            <option value="Umbriel">Umbriel</option>
+            <option value="Titania">Titania</option>
+            <option value="Oberon">Oberon</option>
+            <option value="Triton">Triton</option>
+            <option value="Nereid">Nereid</option>
+            <option value="Charon">Charon</option>
+            <option value="Amalthea">Amalthea</option>
+            <option value="Thebe">Thebe</option>
+            <option value="Adrastea">Adrastea</option>
+            <option value="Metis">Metis</option>
+            <option value="Himalia">Himalia</option>
+            <option value="Elara">Elara</option>
+            <option value="Pasiphae">Pasiphae</option>
+            <option value="Sinope">Sinope</option>
+            <option value="Lysithea">Lysithea</option>
+            <option value="Carme">Carme</option>
+            <option value="Ananke">Ananke</option>
+            <option value="Leda">Leda</option>
+            <option value="Atlas">Atlas</option>
+            <option value="Prometheus">Prometheus</option>
+            <option value="Pandora">Pandora</option>
+            <option value="Pan">Pan</option>
+            <option value="Epimetheus">Epimetheus</option>
+            <option value="Janus">Janus</option>
+            <option value="Telesto">Telesto</option>
+            <option value="Calypso">Calypso</option>
+            <option value="Helene">Helene</option>
+            <option value="Phobe">Phobe</option>
+            <option value="Cordelia">Cordelia</option>
+            <option value="Ophelia">Ophelia</option>
+            <option value="Cressida">Cressida</option>
+            <option value="Bianca">Bianca</option>
+            <option value="Desdemona">Desdemona</option>
+            <option value="Juliet">Juliet</option>
+            <option value="Portia">Portia</option>
+            <option value="Rosalind">Rosalind</option>
+            <option value="Puck">Puck</option>
+            <option value="Belinda">Belinda</option>
+            <option value="Naiad">Naiad</option>
+            <option value="Thalassa">Thalassa</option>
+            <option value="Despina">Despina</option>
+            <option value="Galatea">Galatea</option>
+            <option value="Larissa">Larissa</option>
+            <option value="Proteus">Proteus</option>
+            <option value="Ceres">Ceres</option>
+            <option value="Pallas">Pallas</option>
+            <option value="Vesta">Vesta</option>
+            <option value="Lutetia">Lutetia</option>
+            <option value="Ida">Ida</option>
+            <option value="Eros">Eros</option>
+            <option value="Davida">Davida</option>
+            <option value="Gaspra">Gaspra</option>
+            <option value="Steins">Steins</option>
+            <option value="Itokawa">Itokawa</option>
+            <option value="P9_Temple_1">P9_Temple_1</option>
+            <option value="P19_Borrelly">P19_Borrelly</option>
+            <option value="NOT_A_PLANET">NOT_A_PLANET</option>
+        </select>
+    </div>
+    <div class="input-angle">
+        <label for="angle">Input angle for virtual telescope testing</label>
+        <input name="angle" type="float" id="angle"/>
+    </div>
+    <div class="input-telescopeName">
+        <label for="telescopeName">Telescope Name</label>
+        <select id="telescopeName" name="telescopeName" form="telescopeName">
+            <option value="NORTH">NORTH (Hawaii)</option>
+            <option value="SOUTH">SOUTH (Chile)</option>
+        </select>
+    </div>
+    <div class="input-validity">
+        <label for="validity">Validity Checking</label>
+        <select id="validity" name="validity" form="validity">
+            <option value="VALID">VALID</option>
+            <option value="INVALID">INVALID</option>
+        </select>
+    </div>
+</form>
+<div class="image-star-catalog" id="image-catalog">
+</div>
+<button id="testSciencePlan">Test Science Plan</button>
+<div class="input-validation" id="validate-container">
+    <label for="statusValidate">Result of testing</label>
+    <select id="statusValidate" name="statusValidate" form="statusValidate">
+        <option value="REJECTED">REJECTED</option>
+        <option value="TESTED">TESTED</option>
+    </select>
+</div>
+<div class="input-comment">
+    <label for="comment">comment</label>
+    <input name="comment" type="text" id="comment"/>
+</div>
+<button id="submitSciencePlan">Submit</button>
+<script src="./apis.js"></script>
+<script src="./test.js">
+
+</script>
+
+</body>
+</html>
